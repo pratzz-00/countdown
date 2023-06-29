@@ -15,11 +15,21 @@ header {
   align-items: center;
   text-align: center;
   min-height: 100vh;
-  background-image: url("pg.png");
-  background-size: cover;
+  background-image: url("v3.png");
+  background-size: 100%;
   background-position: center;
   position: relative;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   
+}
+@media screen and (max-width: 768px ){
+  header{
+    background-image: url("b.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
 }
 header:after {
   display: block;
@@ -34,91 +44,98 @@ header:after {
 }
 header .content {
   position: relative;
+  block-size: 20%;
   z-index: 1;
 }
+
 header .content h1 {
   color: #FFF;
-  font-size: 28px;
+  font-size: 50px;
   font-weight: 900;
+  margin: 150px 0px 60px 0px;
 }
 header .content h1 span {
-  font-weight: 100;
+  font-weight: 200;
 }
-@media screen and (min-width: 480px) {
+
+@media screen and (max-width: 768px) {
   header .content h1 {
-    font-size: 36px;
+    font-size: 25px;
+    margin: 50px 0px 10px 0px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width:769px) {
   header .content h1 {
-    font-size: 42px;
+    font-size:35px;
+    margin: 100px 0px 30px 0px;
   }
 }
-@media screen and (min-width: 1024px) {
-  header .content h1 {
-    font-size: 45px;
-  }
-}
-@media screen and (min-width: 1280px) {
+@media screen and (min-width:1280px) {
   header .content h1 {
     font-size: 60px;
   }
 }
 header .content h2 {
-  color: hsl(0, 90%, 26%);
-  text-shadow: -2px 1px #d9dfdd;
-  font-size: 30px;
+  color: #4af34a;
+  text-shadow: -2px 1px #d42424;
+  font-size: 80px;
   font-weight: 900;
-  margin: 30px 0px;
+  margin: 10px 0px;
   font-family: serif;
   font-style: italic;
 }
-@media screen and (min-width: 480px) {
+
+@media screen and (max-width: 768px) {
   header .content h2 {
-    font-size:40px;
+    font-size: 30px;
+    margin: 0px 0px ;
   }
 }
-@media screen and (min-width: 768px) {
-  header .content h2 {
-    font-size: 50px;
-  }
-}
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 769px) {
   header .content h2 {
     font-size: 55px;
   }
 }
 @media screen and (min-width: 1280px) {
   header .content h2 {
-    font-size: 75px;
+    font-size: 80px;
+    margin: 60px 0px 20px 0px;
   }
 }
 header .content .countdown {
-  color: #4af34a;
-  text-shadow: -2px 1px #d9dfdd;
-
+  color: #a21b17;
+  text-shadow: -2px 1px #f0f0f0;
+  margin: 50px 0px 50px 0px;
   font-size: 50px;
   font-weight: 600;
 }
-@media screen and (min-width: 480px) {
+
+@media screen and (max-width: 768px) {
   header .content .countdown {
-    font-size: 42px;
+    font-size: 36px;
+    margin: 10px 0px ;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   header .content .countdown {
-    font-size: 56px;
+    font-size: 40px;
   }
 }
-@media screen and (min-width: 1024px) {
+ @media screen and (min-width: 1024px) {
   header .content .countdown {
-    font-size: 72px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  header .content .countdown {
-    font-size: 88px;
+    font-size: 60px;
   }
 }
 
-/*# sourceMappingURL=main.css.map */
+@media screen and (min-width: 1280px) {
+  header .content .countdown {
+    font-size: 90px;
+  }
+} 
+
+
+@media screen and (max-width: 768px ){
+  header .content p {
+    color: #FFF;
+  }
+}
